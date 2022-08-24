@@ -1,0 +1,19 @@
+.invalid-feedback{
+  display: block!important;
+}
+.error{
+  color: #ff0000;
+  font-size: 0.8rem !important;
+  display: flex !important;
+}
+
+.phRojo:placeholder {
+  color: #ff0000!important;
+
+}
+
+.rojo {
+  color: #ff0000!important;
+
+}
+

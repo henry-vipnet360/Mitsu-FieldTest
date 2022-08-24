@@ -1,0 +1,781 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Mitsu - App - Resumen 1 PDF</title>
+
+    <style>
+        @font-face {
+            font-family: 'HelveticaNeueLight';
+            src: url("fonts/HelveticaNeueLight.eot");
+            src: url("fonts/HelveticaNeueLight.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeueLight.woff2") format("woff2"), url("fonts/HelveticaNeueLight.woff") format("woff"), url("fonts/HelveticaNeueLight.ttf") format("truetype"), url("fonts/HelveticaNeueLight.svg#HelveticaNeueLight") format("svg");
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'HelveticaNeueMedium';
+            src: url("fonts/HelveticaNeueMedium.eot");
+            src: url("fonts/HelveticaNeueMedium.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeueMedium.woff2") format("woff2"), url("fonts/HelveticaNeueMedium.woff") format("woff"), url("fonts/HelveticaNeueMedium.ttf") format("truetype"), url("fonts/HelveticaNeueMedium.svg#HelveticaNeueMedium") format("svg");
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        *, body, html {
+            font-family: 'HelveticaNeueMedium';
+            font-weight: 700 !important;
+            letter-spacing: 0.5px;
+        }
+
+        td {
+            font-size: 9px;
+            line-height: 10px;
+            color: #817E81;
+            padding: 10px 0;
+        }
+
+        td strong {
+
+            font-size: 12px;
+            line-height: 14px;
+            color: #030303;
+        }
+
+        #orden-intervencion td:nth-child(odd) {
+            width: 182px;
+        }
+
+        #orden-intervencion td strong,
+        #informacion td strong {
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        #orden-intervencion td,
+        #informacion td {
+            font-size: 10px;
+            line-height: 11px;
+        }
+
+        #resumen-sen-ext td,
+        #resumen-sen-ext-2 td {
+            padding: 7.5px 0;
+        }
+
+        #resumen-estado td {
+            padding: 4.2px 0;
+        }
+
+        #resumen-estado td:nth-child(even) {
+            text-align: right;
+        }
+
+        #resumen-estado .interlinea td {
+            padding: 1.2px 0;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div style="max-width: 600px; margin:0 auto;" id="resumen-1" class="container resumen-1">
+        <div class="header"
+            style="background: #FF0000; display: flex;margin-bottom: 5px; border-radius: 0 0 20px 20px; align-items: center;">
+            <div class="">
+                <figure>
+                    <img style="width:150px;" src="img/logo_blanco.svg" alt="">
+                </figure>
+            </div>
+            <div class="">
+                <h1
+                    style="font-size: 17px; line-height: 20px; text-align: right; letter-spacing: 0.05em; margin: 10px; font-family: 'HelveticaNeueMedium';font-weight: 700!important; color: #fff;">
+                    Checklist Field Test <strong>Sistemas ECODAN</strong></h1>
+
+            </div>
+        </div>
+
+        <div id="orden-intervencion" class="orden-intervencion"
+            style="border-radius: 17px; background-color:#F1F1F1; padding-bottom: 20px;">
+            <div style="display: flex; padding-left: 40px; padding: 10px 5px 20px 15px;" class="titulo">
+                <img width="30px" src="img/ico_01.svg" alt="">
+                <h2
+                    style="font-weight: 700!important; font-family: 'HelveticaNeueMedium'; font-size: 14px; line-height: 17px;color: #FF0000; padding-left: 20px;">
+                    Orden de Intervención</h2>
+            </div>
+
+            <!-- 1 Orden de Intervención -->
+
+            <div style="padding: 0 20px;">
+
+                <table border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td>Nº Orden: <strong>120004247037</strong></td>
+                            <td>Nombre del SAT: <strong>Diserpresto</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Técnico: <strong>Salvador</strong></td>
+                            <td>Fecha aviso SAT: <strong>30/04/2022</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="1">Service Reference según solicitante</td>
+                            <td><strong>BM80600001 i-BX-N-006M</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="1">No Serie según solicitante Persona </td>
+                            <td><strong>32118955</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="1">Empresa solicitante</td>
+                            <td><strong>Suministros Abc Viladecans SL</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="1">Persona contacto solicitante</td>
+                            <td><strong>Jose Calle Ortega</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="1">Teléfono</td>
+                            <td><strong>658904571</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="1">Persona de contacto para el Servicio</td>
+                            <td><strong>Antonio Gutierrez</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="1">Teléfono</td>
+                            <td><strong>606691680</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="1">Dirección Instalación</td>
+                            <td><strong>Camí Vell de Gandia - 52C</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="1">Service Reference de la unidad</td>
+                            <td><strong>BM80600001 i-BX-N-006M</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="1">Nº Serie de la unidad</td>
+                            <td><strong>32118955</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="1">Modelo Hidrobox/Interface</td>
+                            <td><strong>EHST20C-VM2D</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="1">Nº Serie Hidrobox/Interface</td>
+                            <td><strong>0E00851</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <!-- 2 Marcar Elementos Instalados -->
+
+        <div id="marcar-element-install" class="marcar-element-install"
+            style="border-radius: 17px; background-color:#F1F1F1; padding-bottom: 10px; margin-top: 10px">
+            <div style="display: flex; padding-left: 40px; padding: 10px 5px 20px 15px;" class="titulo">
+                <img width="30px" src="img/ico_02.svg" alt="">
+                <h2
+                    style="font-weight: 700!important; font-family: 'HelveticaNeueMedium'; font-size: 14px; line-height: 17px;color: #FF0000; padding-left: 20px;">
+                    Marcar elementos instalados</h2>
+            </div>
+
+            <div style="padding: 0 20px;">
+
+                <table border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td><img width="100%" src="img/zona-elementos-instalados.png" alt=""></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <!-- 3 Información -->
+
+        <div id="informacion" class="informacion"
+            style="border-radius: 17px; background-color:#F1F1F1; padding-bottom: 10px; margin-top: 10px; width: 46%; float: left; margin-right: 2%;">
+            <div style="display: flex; padding-left: 40px; padding: 10px 5px 20px 15px;" class="titulo">
+                <img width="30px" src="img/ico_03.svg" alt="">
+                <h2
+                    style="font-weight: 700!important; font-family: 'HelveticaNeueMedium'; font-size: 14px; line-height: 17px;color: #FF0000; padding-left: 20px;">
+                    Información</h2>
+            </div>
+
+            <div style="padding:0 20px;">
+                <table border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tbody>
+
+                        <tr>
+                            <td colspan="2">Volumen agua primario</td>
+                            <td><strong>20 litros</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Caudal agua primario</td>
+                            <td><strong>40 l/min</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Material tubería primario</td>
+                            <td><strong>Multicapa</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">ø Líquido / gas</td>
+                            <td><strong>3/8-5/8</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Mts. verticales* Ext-Hyd</td>
+                            <td><strong>20</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Mts. horizontales* Ext-Hyd</td>
+                            <td><strong>10</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Mts. totales*</td>
+                            <td><strong>30</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Carga adicional de refrigerante</td>
+                            <td><strong>1 kg</strong></td>
+                        </tr>
+                        <tr>
+                            <td width="30%">Frio</td>
+                            <td colspan="2"><strong>Si</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Zona 1</td>
+                            <td colspan="2"><strong>Suelo y Techo</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Si TH1</td>
+                            <td colspan="2"><strong>PAR-WT40/50R-E</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+
+        <!-- 4 Resumen señales externas -->
+
+        <div id="resumen-sen-ext" class="resumen-sen-ext"
+            style="border-radius: 17px; background-color:#F1F1F1; padding-bottom: 10px; margin-top: 10px; width: 52%; float: left;">
+            <div style="display: flex; padding-left: 40px; padding: 10px 5px 20px 15px;" class="titulo">
+                <img width="30px" src="img/ico_01.svg" alt="">
+                <h2
+                    style="font-weight: 700!important; font-family: 'HelveticaNeueMedium'; font-size: 14px; line-height: 17px;color: #FF0000; padding-left: 20px;">
+                    Resumen señales externas</h2>
+            </div>
+
+            <div style="padding: 0 10px;">
+                <table border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td colspan="2" style="font-size: 10px; line-height: 11px;">Salidas</td>
+                        </tr>
+                        <tr>
+                            <td>OUT1 TBO.1 1 - 2 Bomba circulación 1 (calor/frío y ACS)</td>
+                            <td><strong>ON</strong></td>
+                        </tr>
+                        <tr>
+                            <td>OUT2 TBO.1 3 - 4 Bomba circulación 2 (calor/frío Zona1)</td>
+                            <td><strong>ON</strong></td>
+                        </tr>
+                        <tr>
+                            <td>OUT3* TBO.1 5 - 6 Bomba circulación 3 (calor/frío Zona2)</td>
+                            <td><strong>ON</strong></td>
+                        </tr>
+                        <tr>
+                            <td>OUT3* TBO.1 5 - 6 Vávula 2 vías 2b</td>
+                            <td><strong>ON</strong></td>
+                        </tr>
+                        <tr>
+                            <td>OUT4 TBO.2 4 - 6 Válvula 3 vías (válvula 2 vías 1)</td>
+                            <td><strong>ON</strong></td>
+                        </tr>
+                        <tr>
+                            <td>OUT5 TBO.2 1 - 2 Válvula mezcladora</td>
+                            <td><strong>ON</strong></td>
+                        </tr>
+                        <tr>
+                            <td>OUT5 TBO.2 2 - 3 Válvula mezcladora</td>
+                            <td><strong>ON</strong></td>
+                        </tr>
+                        <tr>
+                            <td>OUT6 TBO.5 5 - 6 Resistencia eléctrica impulsión 1</td>
+                            <td><strong>OFF</strong></td>
+                        </tr>
+                        <tr>
+                            <td>OUT7 TBO.5 7 - 8 Resistencia eléctrica impulsión 2</td>
+                            <td><strong>OFF</strong></td>
+                        </tr>
+                        <tr>
+                            <td>OUT8 TBO.4 5 - 6 Señal Operación en Frío</td>
+                            <td><strong>OFF</strong></td>
+                        </tr>
+                        <tr>
+                            <td>OUT9 TBO.4 3 - 4 Resistencia inmersión</td>
+                            <td><strong>OFF</strong></td>
+                        </tr>
+                        <tr>
+                            <td>OUT12 TBO.3 5 - 6 Desescarche</td>
+                            <td><strong>OFF</strong></td>
+                        </tr>
+                        <tr>
+                            <td>OUT13* TBO.4 1 - 2 Válvula 2 vías 2a</td>
+                            <td><strong>OFF</strong></td>
+                        </tr>
+                        <tr>
+                            <td>OUT14 CNP4 Bomba circulación 4 (ACS)</td>
+                            <td><strong>OFF</strong></td>
+                        </tr>
+                        <tr>
+                            <td>OUT15 TBO.3 7 - 8 Señal Operación Compresor</td>
+                            <td><strong>ON</strong></td>
+                        </tr>
+                        <tr>
+                            <td>OUT16 TBO.3 3 - 4 Termo ON Calor/Frío</td>
+                            <td><strong>ON</strong></td>
+                        </tr>
+                        <tr>
+                            <td>OUTA1 TBOI.4 7 - 8 Salida Analógica</td>
+                            <td><strong>OFF</strong></td>
+                        </tr>
+                        <tr>
+                            <td>BC TBO.5 3 - 4 Protección resistencias eléctricas impulsión</td>
+                            <td><strong>OFF</strong></td>
+                        </tr>
+                        <tr>
+                            <td>BHC TBO.5 1 - 2 Termostato para resistencias eléctricas impulsión</td>
+                            <td><strong>ON</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 5 Instalación hidráulica -->
+
+        <div id="install-hidraulica" class="install-hidraulica"
+            style="border-radius: 17px; background-color:#F1F1F1; padding-bottom: 10px; margin-top: 10px; width: 46%; float: left; top: -192px; position: relative;">
+            <div style="display: flex; padding-left: 40px; padding: 10px 5px 20px 15px;" class="titulo">
+                <img width="30px" src="img/ico_04.svg" alt="">
+                <h2
+                    style="font-weight: 700!important; font-family: 'HelveticaNeueMedium'; font-size: 14px; line-height: 17px;color: #FF0000; padding-left: 20px;">
+                    Instalación hidráulica</h2>
+            </div>
+
+            <div style="padding: 0 20px;">
+                <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td>Purgadores</td>
+                            <td><strong>Si</strong></td>
+                        </tr>
+                        <tr>
+                            <td>¿Dónde?</td>
+                            <td><strong>Primario</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Caudalimetro</td>
+                            <td><strong>Si</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 6 Resumen señales externas -->
+
+        <div id="resumen-sen-ext-2" class="resumen-sen-ext-2"
+            style="border-radius: 17px; background-color:#F1F1F1; padding-bottom: 10px; margin-top: 10px; width: 100%; padding: 20px 0; float: left; top: -189px; position: relative;">
+            <div style="display: flex; padding-left: 40px; padding: 10px 5px 20px 15px;" class="titulo">
+                <img width="30px" src="img/ico_04.svg" alt="">
+                <h2
+                    style="font-weight: 700!important; font-family: 'HelveticaNeueMedium'; font-size: 14px; line-height: 17px;color: #FF0000; padding-left: 20px;">
+                    Resumen señales externas</h2>
+            </div>
+
+            <div style="padding: 0 10px;">
+                <table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td colspan="2" style="font-size: 10px; line-height: 11px;">Entradas</td>
+                        </tr>
+                        <tr>
+                            <td width="45%">IN1 ·
+                                TBI.1 13 - 14 ·
+                                Conexión de termostato externo 1</td>
+                            <td><strong>OFF</strong></td>
+                            <td width="35%">IN8
+                                · TBI.3 1 - 2 · Vatímetro 1</td>
+                            <td><strong>OFF</strong></td>
+                        </tr>
+                        <tr>
+                            <td>IN2
+                                · TBI.1 11 - 12
+                                · Interruptor de flujo 1</td>
+                            <td><strong>ON</strong></td>
+                            <td>IN9
+                                · TBI.3 3 - 4
+                                · Vatímetro 2</td>
+                            <td><strong>OFF</strong></td>
+                        </tr>
+                        <tr>
+                            <td>IN3
+                                · TBI.1 9 - 10
+                                · Interruptor de flujo 2 (Zona 1)</td>
+                            <td><strong>ON</strong></td>
+                            <td>IN10
+                                ·TBI.3 5 - 6
+                                · Calorímetro</td>
+                            <td><strong>OFF</strong></td>
+                        </tr>
+                        <tr>
+                            <td>IN4
+                                · TBI.1 7 - 8 · Control de demanda</td>
+                            <td><strong>ON</strong></td>
+                            <td>IN1A
+                                TBI.3 13 - 14
+                                Sensor de Caudal</td>
+                            <td><strong>OFF</strong></td>
+                        </tr>
+                        <tr>
+                            <td>IN5
+                                · TBI.1 5 - 6
+                                · Termostato exterior</td>
+                            <td><strong>OFF</strong></td>
+                        </tr>
+                        <tr>
+                            <td>IN6 ·
+                                TBI.1 3 - 4
+                                · Conexión de termostato externo 2</td>
+                            <td><strong>OFF</strong></td>
+                        </tr>
+                        <tr>
+                            <td>IN7 ·
+                                TBI.1 1 - 2
+                                · Interruptor de flujo 3 (Zona 2)</td>
+                            <td><strong>OFF</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- aqui -->
+
+        <!-- 8 Resumen Estado de los SW’s -->
+
+        <div id="resumen-estado" class="resumen-estado" style="border-radius: 17px; background-color:#F1F1F1; padding-bottom: 10px; margin-top: 10px; width: 52%; float: left;margin-right: 2%; position: relative;
+            top: -186px;">
+            <div style="display: flex; padding-left: 40px; padding: 10px 5px 20px 15px;" class="titulo">
+                <img width="30px" src="img/ico_01.svg" alt="">
+                <h2
+                    style="font-weight: 700!important; font-family: 'HelveticaNeueMedium'; font-size: 14px; line-height: 17px;color: #FF0000; padding-left: 20px;">
+                    Resumen Estado de los SW’s</h2>
+            </div>
+
+            <div style="padding: 0 10px;">
+                <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td width="100%" colspan="4">SW1 1 - Caldera</td>
+                            <td><strong>ON</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">SW1 2 - Temperatura máxima salida agua en calor</td>
+                            <td><strong>ON</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">SW1 3 - Tanque ACS</td>
+                            <td><strong>ON</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">SW1 4 - Resistencia Inmersión</td>
+                            <td><strong>ON</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">SW1 5 - Resistencia eléctrica impulsión</td>
+                            <td><strong>ON</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">SW1 6 - Función resistencia eléctrica impulsión</td>
+                            <td><strong>ON</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">SW1 7 - Tipo Unidad exterior</td>
+                            <td><strong>ON</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">SW1 8 - Control remoto inalámbrico</td>
+                            <td><strong>OFF</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">SW2 1 - Lógica termostato ambiente 1 (IN1)</td>
+                            <td><strong>OFF</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">SW2 2 - Lógica interruptor de flujo 1 (IN2)</td>
+                            <td><strong>OFF</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">SW2 3 - Restricción capacidad resistencia
+                                eléctrica impulsión</td>
+                            <td><strong>OFF</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">SW2 4 - Modo frio</td>
+                            <td><strong>OFF</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">SW2 5 - Funcionamiento de una fuente de calor cuando se produce un error en
+                                unidad exterior</td>
+                            <td><strong>OFF</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">SW2 6 - Tanque de mezcla</td>
+                            <td><strong>OFF</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">SW2 7 - Control tempratura 2 zonas</td>
+                            <td><strong>ON</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">SW2 8 - Sensor Caudal</td>
+                            <td><strong>ON</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">SW3 1 - Lógica termostato ambiente 2 (IN6)</td>
+                            <td><strong>OFF</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">SW3 2 - Lógica interruptor de flujo 2 (IN3)</td>
+                            <td><strong>OFF</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">SW3 3 - Lógica interruptor de flujo 3 (IN7)</td>
+                            <td><strong>ON</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">SW3 4 - Vatímetro</td>
+                            <td><strong>ON</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">SW3 5 - Modo calor (solo cuando está conectado
+                                a PUHZ-FRP)</td>
+                            <td><strong>ON</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">SW3 7 - Intercambiador Externo ACS</td>
+                            <td><strong>ON</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">SW3 8 - Calorímetro</td>
+                            <td><strong>ON</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">SW4 1 - Controles múltiples</td>
+                            <td><strong>ON</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">SW4 2 - Esclavo / Maestro</td>
+                            <td><strong>ON</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">SW4 4 - Operación únicamente de la interior</td>
+                            <td><strong>ON</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" style="padding:20px 0; color: #424041;">Placa de control Unidad Exterior
+                            </td>
+                        </tr>
+                        <tr style="text-align: center;">
+                            <td colspan="2" style="padding-top:20px 0;">Modelo Split</td>
+                            <td colspan="2" style="padding-top:20px 0;">Modelo Compacta</td>
+
+                        </tr>
+                        <tr class="interlinea" style="text-align: center;">
+                            <td colspan="1">SW1 1</td>
+                            <td colspan="1"><strong>ON</strong></td>
+                            <td colspan="1">SW7 1</td>
+                            <td colspan="1"><strong>ON</strong></td>
+                        </tr>
+                        <tr class="interlinea" style="text-align: center;">
+                            <td colspan="1">SW1 2</td>
+                            <td colspan="1"><strong>ON</strong></td>
+                            <td colspan="1">SW7 2</td>
+                            <td colspan="1"><strong>ON</strong></td>
+                        </tr>
+                        <tr class="interlinea" style="text-align: center;">
+                            <td colspan="1">SW1 3</td>
+                            <td colspan="1"><strong>ON</strong></td>
+                            <td colspan="1">SW7 3</td>
+                            <td colspan="1"><strong>OFF</strong></td>
+                        </tr>
+                        <tr class="interlinea" style="text-align: center;">
+                            <td colspan="1">SW1 4</td>
+                            <td colspan="1"><strong>OFF</strong></td>
+                            <td colspan="1">SW7 4</td>
+                            <td colspan="1"><strong>OFF</strong></td>
+                        </tr>
+                        <tr class="interlinea" style="text-align: center;">
+                            <td colspan="1">SW1 5</td>
+                            <td colspan="1"><strong>OFF</strong></td>
+                            <td colspan="1">SW7 5</td>
+                            <td colspan="1"><strong>OFF</strong></td>
+                        </tr>
+                        <tr class="interlinea" style="text-align: center;">
+                            <td colspan="1">SW1 6</td>
+                            <td colspan="1"><strong>OFF</strong></td>
+                            <td colspan="1">SW7 6</td>
+                            <td colspan="1"><strong>OFF</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 9 Datos de funcionamiento -->
+
+        <div id="datos-funciona" class="datos-funciona" style="border-radius: 17px; background-color:#F1F1F1; padding-bottom: 10px; margin-top: 10px; width: 46%; float: left; position: relative;
+            top: -186px;">
+            <div style="display: flex; padding-left: 40px; padding: 10px 5px 20px 15px;" class="titulo">
+                <img width="30px" src="img/ico_04.svg" alt="">
+                <h2
+                    style="font-weight: 700!important; font-family: 'HelveticaNeueMedium'; font-size: 14px; line-height: 17px;color: #FF0000; padding-left: 20px;">
+                    Datos de funcionamiento</h2>
+            </div>
+
+            <div style="padding:0 20px;">
+                <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tbody>
+
+                        <tr>
+                            <td colspan="2" style="color: #000;">Summary of Setting 1/2</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">HWtemp</td>
+                            <td><strong>30</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+
+
+        <!-- 10 Comprobaciones -->
+
+        <div id="comprobaciones" class="comprobaciones" style="border-radius: 17px; background-color:#F1F1F1; padding-bottom: 10px; margin-top: 10px; width: 46%; float: left; position: relative;
+            top: -186px;">
+            <div style="display: flex; padding-left: 40px; padding: 10px 5px 20px 15px;" class="titulo">
+                <img width="30px" src="img/ico_06.svg" alt="">
+                <h2
+                    style="font-weight: 700!important; font-family: 'HelveticaNeueMedium'; font-size: 14px; line-height: 17px;color: #FF0000; padding-left: 20px;">
+                    Comprobaciones</h2>
+            </div>
+
+            <div style="padding: 0 20px;">
+                <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td style="color:#000;">Modo de trabajo de la unidad</td>
+                        </tr>
+                        <tr>
+                            <td><strong style="padding-left: 90px;">ACS</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 10 Tensiones -->
+
+        <div id="tensiones" class="tensiones" style="border-radius: 17px; background-color:#F1F1F1; padding-bottom: 10px; margin-top: 10px; width: 46%; float: left; position: relative;
+            top: -186px;">
+            <div style="display: flex; padding-left: 40px; padding: 10px 5px 20px 15px;" class="titulo">
+                <img width="30px" src="img/ico_08.svg" alt="">
+                <h2
+                    style="font-weight: 700!important; font-family: 'HelveticaNeueMedium'; font-size: 14px; line-height: 17px;color: #FF0000; padding-left: 20px;">
+                    Tensiones</h2>
+            </div>
+
+            <div style="padding: 0 20px;">
+                <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td>Alimentación</td>
+                            <td>Monofásica</td>
+                        </tr>
+                        <tr>
+                            <td>L1 -N</td>
+                            <td><strong>220 Vac</strong></td>
+                        </tr>
+                        <tr>
+                            <td>N -T</td>
+                            <td><strong>0 Vac</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Alimentación</td>
+                            <td>Comunicación</td>
+                        </tr>
+                        <tr>
+                            <td>S1 - S2</td>
+                            <td><strong>220 Vac</strong></td>
+                        </tr>
+                        <tr>
+                            <td>S3 - S4</td>
+                            <td><strong>12/30 Vac</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 11 texto Final -->
+
+        <div id="texto-final" class="texto-final" style=" padding-bottom: 10px; margin-top: 10px; width: 46%; float: left; top: 3px; position: relative; background: rgb(255,255,255);background: linear-gradient(142deg, rgba(255,255,255,0.07636558041185226) 52%, rgba(255,0,0,0.1407913507199755) 100%);position: relative;
+            top: -186px;height: 240px;">
+            <div style="display: flex; padding-left: 40px; padding: 10px 5px 20px 15px;" class="titulo">
+            </div>
+
+            <div style="padding: 0 20px;">
+                <p style="font-size: 7px; line-height: 10px; letter-spacing: 0.02em;font-family: 'HelveticaNeueLight';">
+                    Es obligación tanto de su compañía como cualquiera de sus subcontratistas el cumplimiento, en
+                    todo momento, de las normas y regulaciones vigentes relativas a los productos contenidos en el
+                    presente documento, así como la estricta observación, ya sea en la fase de negociación, diseño,
+                    compra, transporte, descarga, instalación, mantenimiento, reparación, desmantelamiento o cualquier
+                    otra fase que implique el uso y/o manipulación de los mismos, de todas las indicaciones e
+                    instrucciones sobre los productos contenidas en la información y documentación proporcionada por
+                    Mitsubishi Electric y accesible a través de nuestra página web. Asimismo, es igualmente
+                    obligación y responsabilidad de su compañía y de sus subcontratistas transmitir y hacer llegar
+                    dicha información y documentación a sus respectivos clientes para asegurar que toda la cadena de
+                    suministro es debidamente conocedora de la misma. <br><br>
+
+                    El incumplimiento por su parte, o por parte de sus subcontratistas o clientes, de las indicaciones
+                    establecidas en la documentación anteriormente indicada, eximirá a Mitsubishi Electric de
+                    cualquier responsabilidad ante Ud. o terceros.</p>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
